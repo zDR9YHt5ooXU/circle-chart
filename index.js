@@ -116,8 +116,11 @@ function BubbleChart(
 
   return Object.assign(svg.node(), { scales: { color } });
 }
-
-const element = document.querySelector('div#chart');
+const files = [
+  { id: 'flare.analytics.graph.MaxFlowMinCut', value: 7840 },
+  { id: 'flare.analytics.graph.ShortestPaths', value: 5914 },
+  { id: 'flare.analytics.graph.SpanningTree', value: 3416 },
+];
 
 const chart = BubbleChart(files, {
   label: (d) =>
